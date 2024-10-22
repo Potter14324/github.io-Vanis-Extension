@@ -8,6 +8,12 @@
 // @grant        GM_addStyle
 // ==/UserScript==
 
+const observer = new MutationObserver(() => {
+    // Your code to change the DOM goes here
+});
+
+observer.observe(document.body, { childList: true, subtree: true });
+
 setTimeout(() => {
     // Your code to change the DOM goes here
 }, 1000); // 
