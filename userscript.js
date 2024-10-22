@@ -8,6 +8,10 @@
 // @grant        GM_addStyle
 // ==/UserScript==
 
+setTimeout(() => {
+    // Your code to change the DOM goes here
+}, 1000); // 
+
 (function() {
     'use strict';
 
