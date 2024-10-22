@@ -27,7 +27,7 @@ setTimeout(() => {
     // Example: Change color of server list items
     GM_addStyle(`
         .server-list-item {
-            color: blue !important;
+            color: yellow !important;
         }
     `);
 })();
