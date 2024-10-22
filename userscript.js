@@ -28,7 +28,7 @@ observer.observe(document.body, { childList: true, subtree: true });
     // Example: Change color of server list items
     GM_addStyle(`
         .server-list-item {
-            color: pink !important;
+            color: cyan !important;
         }
     `);
 })();
