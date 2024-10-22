@@ -6,6 +6,7 @@
 // @author       Your Name
 // @match        https://vanis.io/*
 // @grant        GM_addStyle
+// @run-at document-end
 // ==/UserScript==
 
 const observer = new MutationObserver(() => {
