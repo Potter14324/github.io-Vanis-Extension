@@ -16,7 +16,7 @@
     // Example: Change color of server list items
     GM_addStyle(`
         .server-list-item {
-            color: red !important;
+            color: blue !important;
         }
     `);
 })();
