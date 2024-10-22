@@ -10,15 +10,6 @@
 // @run-at document-end
 // ==/UserScript==
 
-const observer = new MutationObserver(() => {
-    // Your code to change the DOM goes here
-});
-
-observer.observe(document.body, { childList: true, subtree: true });
-
-setTimeout(() => {
-    // Your code to change the DOM goes here
-}, 1000); // 
 
 (function() {
     'use strict';
