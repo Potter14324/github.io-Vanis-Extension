@@ -9,18 +9,20 @@
 // @run-at       document-end
 // ==/UserScript==
 
-setTimeout(() => {
-    // Your code to change the DOM goes here
-}, 1000); // Adjust the time as necessary
+// MutationObserver to observe changes in the body
+    const observer = new MutationObserver(() => {
+        // Code to react to DOM changes goes here
+        console.log("DOM changed"); // Log for debugging
+    });
 
+    // Start observing the document body for child list changes
+    observer.observe(document.body, { childList: true, subtree: true });
 
-const observer = new MutationObserver(() => {
-    // Your code to change the DOM goes here
-});
-
-observer.observe(document.body, { childList: true, subtree: true });
-
-(function() {
+    // Set a timeout to execute code after 1 second
+    setTimeout(() => {
+        // Additional code can go here
+        console.log("Timeout reached"); // Log for debugging
+    }, 1000); // Adjust the time as necessary
     'use strict';
 
     // Your code here...
